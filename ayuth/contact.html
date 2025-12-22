@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Ayurvaith</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* HEADER */
+    .topbar {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .topbar__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand__logo_img {
+      width: 50px;
+    }
+
+    .brand__name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    /* CONTACT SECTION */
+    .section {
+      background-color: #2e7d32; /* GREEN */
+      padding: 80px 0;
+    }
+
+    .contact-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card {
+      flex: 1;
+      color: #ffffff;
+    }
+
+    .right-card {
+      margin-left: 120px;
+    }
+
+    /* MAP BUTTON */
+    .map-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .map-btn:hover {
+      background-color: #ffffff;
+      color: #2e7d32;
+    }
+
+    /* FOOTER - SAME GREEN */
+    footer {
+      background-color: #2e7d32;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container topbar__inner">
+    <div class="brand">
+      <img class="brand__logo_img" src="assets/ayurvaith imag.jpg" alt="Ayurvaith logo">
+      <div class="brand__name">Ayurvaith</div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="founder.html">Founder</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-flex">
+
+      <!-- LEFT SIDE -->
+      <div class="card">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> 8795557772, 8707358580</p>
+        <p><strong>Email:</strong> helpdesk@ayurvaith.com</p>
+        <p><strong>Address:</strong> Kanpur, Uttar Pradesh</p>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="card right-card">
+        <h2>Our Location</h2>
+        <p>
+          60/52, Nayaganj,<br>
+          Pipal wali Kothi,<br>
+          Kanpur
+        </p>
+
+        <a class="map-btn"
+           href="https://maps.app.goo.gl/5ykSZjnWiybPxkH1A?g_st=awb"
+           target="_blank">
+          View on Google Maps
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© Ayurvaith. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
