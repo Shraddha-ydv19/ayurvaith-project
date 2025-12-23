@@ -4,16 +4,27 @@
   <meta charset="UTF-8">
   <title>Contact | Ayurvaith</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6f5;
     }
 
     /* HEADER */
     .topbar {
       background-color: #ffffff;
       border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     .container {
@@ -36,64 +47,130 @@
     }
 
     .brand__logo_img {
-      width: 50px;
+      width: 45px;
     }
 
     .brand__name {
       font-size: 24px;
-      font-weight: bold;
+      font-weight: 600;
+      color: #2e7d32;
     }
 
     .nav a {
-      margin-left: 15px;
+      margin-left: 18px;
       text-decoration: none;
       color: #333;
       font-weight: 500;
+      position: relative;
+    }
+
+    .nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #2e7d32;
+      left: 0;
+      bottom: -5px;
+      transition: 0.3s;
+    }
+
+    .nav a:hover::after {
+      width: 100%;
     }
 
     /* CONTACT SECTION */
     .section {
-      background-color: #2e7d32; /* GREEN */
-      padding: 80px 0;
+      background: linear-gradient(135deg, #2e7d32, #1b5e20);
+      padding: 90px 0;
+      color: #ffffff;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      opacity: 0.9;
     }
 
     .contact-flex {
       display: flex;
-      justify-content: space-between;
+      gap: 50px;
+      flex-wrap: wrap;
     }
 
     .card {
+      background-color: #ffffff;
+      color: #333;
       flex: 1;
-      color: #ffffff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
     }
 
-    .right-card {
-      margin-left: 120px;
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      margin: 12px 0;
+      font-size: 15px;
+    }
+
+    .card strong {
+      color: #1b5e20;
     }
 
     /* MAP BUTTON */
     .map-btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 18px;
-      border: 2px solid #ffffff;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #2e7d32, #1b5e20);
       color: #ffffff;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
     .map-btn:hover {
-      background-color: #ffffff;
+      background: #ffffff;
       color: #2e7d32;
+      border: 2px solid #2e7d32;
     }
 
-    /* FOOTER - SAME GREEN */
+    /* FOOTER */
     footer {
-      background-color: #2e7d32;
+      background-color: #1b5e20;
       color: #ffffff;
       text-align: center;
-      padding: 20px 0;
+      padding: 25px 0;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .contact-flex {
+        flex-direction: column;
+      }
+
+      .nav {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -119,18 +196,24 @@
 
 <section class="section">
   <div class="container">
+
+    <div class="section-title">
+      <h1>Get in Touch</h1>
+      <p>We’d love to hear from you. Reach out anytime.</p>
+    </div>
+
     <div class="contact-flex">
 
-      <!-- LEFT SIDE -->
+      <!-- LEFT -->
       <div class="card">
-        <h2>Contact Us</h2>
-        <p><strong>Phone:</strong> 8795557772, 8707358580</p>
-        <p><strong>Email:</strong> helpdesk@ayurvaith.com</p>
-        <p><strong>Address:</strong> Kanpur, Uttar Pradesh</p>
+        <h2>Contact Information</h2>
+        <p><strong>📞 Phone:</strong> 8795557772, 8707358580</p>
+        <p><strong>📧 Email:</strong> helpdesk@ayurvaith.com</p>
+        <p><strong>📍 Address:</strong> Kanpur, Uttar Pradesh</p>
       </div>
 
-      <!-- RIGHT SIDE -->
-      <div class="card right-card">
+      <!-- RIGHT -->
+      <div class="card">
         <h2>Our Location</h2>
         <p>
           60/52, Nayaganj,<br>
@@ -150,7 +233,7 @@
 </section>
 
 <footer>
-  <p>© Ayurvaith. All Rights Reserved.</p>
+  <p>© 2025 Ayurvaith. All Rights Reserved.</p>
 </footer>
 
 </body>
