@@ -1,175 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Ayurvaith</title>
+  <meta charset="UTF-8" />
+  <title>Ayurvaith | Contact</title>
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <!-- 🔒 CONTACT PAGE CSS (SAME AS HOME) -->
   <style>
-    * {
-      box-sizing: border-box;
+    .contact-scope {
+      background: #f6f6f6;
+      padding: 80px 0;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f6f5;
-    }
-
-    /* HEADER */
-    .topbar {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .topbar__inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .brand__logo_img {
-      width: 45px;
-    }
-
-    .brand__name {
-      font-size: 24px;
-      font-weight: 600;
-      color: #2e7d32;
-    }
-
-    .nav a {
-      margin-left: 18px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      position: relative;
-    }
-
-    .nav a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: #2e7d32;
-      left: 0;
-      bottom: -5px;
-      transition: 0.3s;
-    }
-
-    .nav a:hover::after {
-      width: 100%;
-    }
-
-    /* CONTACT SECTION */
-    .section {
-      background: linear-gradient(135deg, #2e7d32, #1b5e20);
-      padding: 90px 0;
-      color: #ffffff;
-    }
-
-    .section-title {
+    .contact-scope .contact-title {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
+      color: #2e7d32;
+      font-size: 36px;
     }
 
-    .section-title h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
-    }
-
-    .section-title p {
-      opacity: 0.9;
-    }
-
-    .contact-flex {
+    .contact-scope .contact-flex {
       display: flex;
-      gap: 50px;
+      gap: 40px;
       flex-wrap: wrap;
     }
 
-    .card {
-      background-color: #ffffff;
-      color: #333;
+    .contact-scope .contact-card {
+      background: #ffffff;
       flex: 1;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-      transition: transform 0.3s;
+      padding: 35px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
     }
 
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card h2 {
+    .contact-scope .contact-card h2 {
       color: #2e7d32;
       margin-bottom: 20px;
     }
 
-    .card p {
+    .contact-scope .contact-card p {
       margin: 12px 0;
+      color: #333;
       font-size: 15px;
     }
 
-    .card strong {
-      color: #1b5e20;
-    }
-
-    /* MAP BUTTON */
-    .map-btn {
+    .contact-scope .map-btn {
       display: inline-block;
-      margin-top: 25px;
-      padding: 12px 24px;
-      background: linear-gradient(135deg, #2e7d32, #1b5e20);
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #2e7d32;
       color: #ffffff;
       text-decoration: none;
-      border-radius: 30px;
-      font-weight: 500;
+      border-radius: 25px;
       transition: 0.3s;
     }
 
-    .map-btn:hover {
-      background: #ffffff;
-      color: #2e7d32;
-      border: 2px solid #2e7d32;
+    .contact-scope .map-btn:hover {
+      background: #1b5e20;
     }
 
-    /* FOOTER */
-    footer {
-      background-color: #07320a;
-      color: #ffffff;
-      text-align: center;
-      padding: 25px 0;
-      font-size: 14px;
-    }
-
-    /* RESPONSIVE */
     @media (max-width: 768px) {
-      .contact-flex {
+      .contact-scope .contact-flex {
         flex-direction: column;
-      }
-
-      .nav {
-        display: none;
       }
     }
   </style>
@@ -177,10 +69,13 @@
 
 <body>
 
+<!-- HEADER -->
 <header class="topbar">
   <div class="container topbar__inner">
     <div class="brand">
-      <img class="brand__logo_img" src="assets/ayurvaith imag.jpg" alt="Ayurvaith logo">
+      <div class="brand__logo">
+        <img class="brand__logo_img" src="assets/ayurvaith imag.jpg" alt="Ayurvaith logo">
+      </div>
       <div class="brand__name">Ayurvaith</div>
     </div>
 
@@ -189,40 +84,35 @@
       <a href="about.html">About</a>
       <a href="product.html">Product</a>
       <a href="founder.html">Founder</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="section">
+<!-- CONTACT SECTION -->
+<section class="contact-scope">
   <div class="container">
 
-    <div class="section-title">
-      <h1>Get in Touch</h1>
-      <p>We’d love to hear from you. Reach out anytime.</p>
-    </div>
+    <h1 class="contact-title">Get in Touch</h1>
 
     <div class="contact-flex">
 
-      <!-- LEFT -->
-      <div class="card">
+      <div class="contact-card">
         <h2>Contact Information</h2>
         <p><strong>📞 Phone:</strong> 8795557772, 8707358580</p>
         <p><strong>📧 Email:</strong> helpdesk@ayurvaith.com</p>
         <p><strong>📍 Address:</strong> Kanpur, Uttar Pradesh</p>
       </div>
 
-      <!-- RIGHT -->
-      <div class="card">
+      <div class="contact-card">
         <h2>Our Location</h2>
         <p>
-          60/52, Nayaganj,<br>
-          Pipal wali Kothi,<br>
+          60/52, Nayaganj<br>
+          Pipal wali Kothi<br>
           Kanpur
         </p>
-
         <a class="map-btn"
-           href="https://maps.app.goo.gl/5ykSZjnWiybPxkH1A?g_st=awb"
+           href="https://maps.app.goo.gl/5ykSZjnWiybPxkH1A"
            target="_blank">
           View on Google Maps
         </a>
@@ -231,14 +121,17 @@
     </div>
   </div>
 </section>
+
+<!-- FOOTER -->
 <footer class="footer">
-  <p class="footer__copy" style="margin-left: 120px;">
+  <p class="footer__copy">
     © Ayurvaith. All Rights Reserved.
     <span class="footer-sep">|</span>
-    <a  style="color: #ffffff;" href="https://innovaneers.in" target="_blank" rel="noopener">
+    <a href="https://innovaneers.in" target="_blank">
       Developed by Innovaneers Technologies
     </a>
   </p>
 </footer>
+
 </body>
 </html>

@@ -780,3 +780,56 @@ html {
 .founder-hero {
   min-height: 100vh;
 }
+
+/* FAQ SECTION */
+    .faq-section {
+      padding: 60px 0;
+    }
+
+    .faq-title {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 40px;
+    }
+
+    /* ACCORDION */
+    details {
+      background: #ffffff;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      padding: 18px 22px;
+      cursor: pointer;
+      border-left: 5px solid #2e7d32;
+    }
+
+    summary {
+      list-style: none;
+      font-weight: bold;
+      color: #2e7d32;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "▶";
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    details[open] summary::after {
+      transform: rotate(90deg);
+    }
+
+    details p {
+      margin-top: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    
