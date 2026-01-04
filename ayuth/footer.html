@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer with Navbar</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #333;
+    }
+
+    /* ===== NAVBAR ===== */
+    .topbar {
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 10px 0;
+    }
+
+    .topbar__inner {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand__logo img {
+      height: 45px;
+    }
+
+    .brand__name {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .nav a:hover {
+      color: #2e7d32;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #346c27;
+      padding: 20px 0;
+      margin-top: 80px;
+    }
+
+    .footer__copy {
+      text-align: center;
+      font-size: 14px;
+      color: white;
+    }
+
+    .footer-sep {
+      margin: 0 6px;
+    }
+
+    .footer__copy a {
+      color: #f7f9f7;
+      text-decoration: none;
+    }
+
+    .footer__copy a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="topbar">
+  <div class="topbar__inner">
+    <div class="brand">
+      <div class="brand__logo">
+        <img src="assets/ayurvaith imag.jpg" alt="Ayurvaith Logo">
+      </div>
+      <div class="brand__name">Ayurvaith</div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Product</a>
+      <a href="founder.html">Founder</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <p class="footer__copy">
+    © Ayurvaith. All Rights Reserved.
+    <span class="footer-sep">|</span>
+    <a href="https://innovaneers.in" target="_blank">
+      Developed by Innovaneers Technologies
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>
